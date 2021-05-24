@@ -20,20 +20,17 @@ class YouTubeDebugger extends Component {
 
   handleClickBitrate = () => {
       this.setState({ 
-          settings:  Object.assign({}, this.state.settings, {
-              bitrate: 12
-          })
+          settings:  Object.assign({}, this.state.settings, {bitrate: 12})
       })
   } 
 
   handleClickResolution = () => {
       this.setState({
-          settings: Object.assign({}, this.state.settings, {
-              video: Object.assign({}, this.state.video, {
-                  resolution: '720p'
-              })
+          settings: Object.assign({}, this.state.settings, { 
+            video: Object.assign({}, this.state.video, { 
+              resolution: '720p'
+            })
           })
-
       })
   }
 
